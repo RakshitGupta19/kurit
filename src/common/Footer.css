@@ -1,6 +1,5 @@
 .footer{
     width: 100%;
-    background-color: #395198;
     background-image: url(https://res.cloudinary.com/dznnm9b1j/image/upload/v1740111475/Main_Frame_cbu5g1.png);
     background-size: cover;
     padding: 3% 0 0 0;
@@ -179,7 +178,6 @@
     background-image: url(https://res.cloudinary.com/dznnm9b1j/image/upload/v1740116906/greater-than-symbol_1_xxtyhv.png);
     background-size: cover; 
 }
-
 
 .footerLower{
     width: 100%;
