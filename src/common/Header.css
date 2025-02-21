@@ -1,0 +1,180 @@
+/* Header.css */
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../Font/Lgcd.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'CustomFont', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    width: 95%;
+    margin: auto;
+    background-color: white;
+    padding: 0.9% 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.hamburger-lines {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+}
+
+.hamburger-lines span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    transition: all 0.3s ease;
+}
+
+.hamburger-lines.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 10px);
+}
+
+.hamburger-lines.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-lines.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -10px);
+}
+
+.navbarImg {
+    width: 5%;
+}
+
+.navbarImg img {
+    width: 100%;
+}
+
+.navbarItems {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbarItems a {
+    text-decoration: none;
+    color: black;
+    font-size: calc(1.2vw + 0.5vh);
+    font-weight: 700;
+}
+
+.navbarContact {
+    width: 35%;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    padding: 0.4%;
+    border: 1px solid black;
+}
+
+.contactUsHeading {
+    width: 34%;
+    display: flex;
+}
+
+.contactUsHeading p {
+    margin: 0;
+    font-size: 2.1vw;
+    font-weight: 700;
+    color: black;
+}
+
+.navbarContactNumber {
+    width: 65%;
+    display: flex;
+    padding: 4% 0;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+}
+
+.navbarContactNumber p {
+    color: white;
+    margin: 0;
+    font-size: 2.1vw;
+    font-weight: 700;
+}
+
+.navbarContactNumber img {
+    width: 9%;
+}
+
+@media screen and (max-width: 768px) {  /* 768px */
+    .navbar {
+        padding: 2% 0;
+    }
+
+    .navbarImg {
+        width: 10%;
+    }
+
+    .navbarItems {
+        display: none;
+    }
+
+    .navbarContact {
+        width: 30%;
+    }
+
+    .contactUsHeading {
+        display: none;
+    }
+
+    .navbarContactNumber {
+        width: 100%;
+        padding: 2% 4%;
+    }
+
+    .navbarContactNumber p {
+        font-size: 3vw;
+        padding: 4% 0;
+    }
+
+    .navbarContactNumber img {
+        width: 6%;
+    }
+}
+
+@media screen and (max-width: 480px) {  /* 480px */
+    .navbar {
+        padding: 3% 0;
+    }
+
+    .navbarImg {
+        width: 14%;
+    }
+
+    .navbarContact {
+        width: 40%;
+    }
+
+    .navbarContactNumber p {
+        font-size: 4vw;
+        padding: 3% 0;
+    }
+
+    .navbarContactNumber img {
+        width: 7%;
+    }
+}

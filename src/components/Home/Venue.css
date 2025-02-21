@@ -1,0 +1,160 @@
+.venue{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 7%;
+}
+
+.venueUpper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.venueUpper img{
+    width: 95%;
+}
+
+@font-face {
+    font-family: 'washington';
+    src: url('../../Font/Washington.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lgcd';
+    src: url('../../Font/Lgcd.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../../Font/Lgc.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.venueLower{
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    background-color: #395198;
+    padding-top: 40%;
+    margin-top: -33%;
+}
+
+.venuwLowerDetail{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.venueLowerDHeading{
+    width: 98%;
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+    margin-bottom: 3%;
+}
+
+.venueLowerDHeading p{
+    font-family: 'washington';
+    font-size: calc(4.8vw);
+    color: white;
+    margin: 0;
+}
+
+.navbarContact {
+    width: 35%;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    padding: 0.4%;
+    background-color: white;
+}
+
+.contactUsHeading {
+    width: 34%;
+    display: flex;
+}
+
+.contactUsHeading p {
+    font-family: 'lgcd';
+    margin: 0;
+    font-size: 2.1vw;
+    font-weight: 700;
+    color: black;
+}
+
+.navbarContactNumber {
+    width: 65%;
+    display: flex;
+    padding: 4% 0;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+}
+
+.navbarContactNumber p {
+    font-family: 'lgcd';
+    color: white;
+    margin: 0;
+    font-size: 2.1vw;
+    font-weight: 700;
+}
+
+.navbarContactNumber img {
+    width: 9%;
+}
+
+.venueLowerDDetails{
+    width: 95%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.venueLeft{
+    display: flex;
+    flex-direction: column;
+    width: 38%;
+}
+
+.venueLeft p{
+    font-family: 'lgcd';
+    font-size:  calc(2.2vw);
+    font-weight: 700;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 6%;
+}
+
+.venueRight{
+    width: 61%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.venueRight img{
+    width: 100%;
+}
+
+.venueRight p{
+    font-family: 'CustomFont';
+    font-size: calc(1.45vw);
+    font-weight: 400;
+    color: white;
+}
+
+.venueLeft .properties{
+    font-family: 'CustomFont';
+    color: rgba(255,255,255,0.65);
+    font-weight: 100;
+}

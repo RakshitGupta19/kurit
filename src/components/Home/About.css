@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../../Font/Lgc.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lgcd';
+    src: url('../../Font/Lgcd.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'washington';
+    src: url('../../Font/Washington.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.aboutUs{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10% 0;
+}
+
+.aboutHeading{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8%;
+}
+
+.aboutHeading p{
+    font-size: calc(3.3vw);
+    font-family: 'washington';
+}
+
+.aboutContent{
+    width: 43%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.aboutContent p{
+    font-size: calc(2vw);
+    font-family: 'CustomFont';
+}
+
+.aboutContent span{
+    font-family: 'lgcd';
+}
+

@@ -1,0 +1,213 @@
+.footer{
+    width: 100%;
+    background-color: #395198;
+    background-image: url(https://res.cloudinary.com/dznnm9b1j/image/upload/v1740111475/Main_Frame_cbu5g1.png);
+    background-size: cover;
+    padding: 10% 0 2% 0;
+    margin-top: 17%;
+}
+
+@font-face {
+    font-family: 'lgcd';
+    src: url('../Font/Lgcd.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.footerUpper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 87%;
+    margin: auto;
+    margin-bottom: 5%;
+}
+
+.footerSocialMedia{
+    width: 19%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footerSocialMedia img{
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+.socialMediaIcons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.smimg{
+    width: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socialMediaIcons a img{
+    width: 100%;
+}
+
+.footerLinks{
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+}
+
+.footerLinks a{
+    font-family: 'lgcd';
+    text-decoration: none;
+    color: white;
+    font-size: calc(2vw);
+    margin: 15% 0 20% 0;
+}
+
+.footerForm{
+    width: 38%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact {
+    width: 98%;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    background-color: white;
+    padding: 1%;
+    margin-bottom: 5%;
+}
+
+.contactUs {
+    width: 34%;
+    display: flex;
+}
+
+.contactUs p {
+    margin: 0;
+    font-size: 2.1vw;
+    font-weight: 700;
+    color: black;
+}
+
+.contactNumber {
+    width: 65%;
+    display: flex;
+    padding: 4% 0;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+}
+
+.contactNumber p {
+    color: white;
+    margin: 0;
+    font-size: 2.1vw;
+    font-weight: 700;
+}
+
+.contactNumber img {
+    width: 9%;
+}
+
+.footerFormInput{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerFormInput input{
+    font-family: 'lgcd';
+    width: 95.5%;
+    padding: 4.5% 2%;
+    font-size: 1.4vw;
+    border: none;
+    color: rgba(0,0,0,1);
+    margin-bottom: 1.7%;
+}
+
+.footerFormInput input::placeholder{
+    color: black;
+}
+
+.footerFormInput textarea{
+    font-family: 'lgcd';
+    width: 98%;
+    resize: none;
+    padding: 2.5% 0% 20% 1.5%;
+    font-size: 1.4vw;
+    border: none;
+    margin-bottom: 1.7%;
+}
+
+.footerFormInput textarea::placeholder{
+    color: black;
+}
+
+.footerFormInput .progressBar{
+    width: 99.5%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+    padding: 0 2%;
+}
+
+.progressBar::placeholder{
+    color: black;
+}
+
+.progressBar::-webkit-slider-runnable-track{
+    width: 100%;
+    background-color: white;
+    padding: 1.5% 3%;
+}
+
+.progressBar::-webkit-slider-thumb{
+    appearance: none;
+    padding: 6.5% 0;
+    width: 13%;
+    background-color: black;  
+    background-image: url(https://res.cloudinary.com/dznnm9b1j/image/upload/v1740116906/greater-than-symbol_1_xxtyhv.png);
+    background-size: cover; 
+}
+
+
+.footerLower{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0.7% 0;
+}
+
+.footerLowerLeft{
+    width: 47%;
+}
+
+.footerLowerLeft p{
+    font-family: 'lgcd';
+    font-size: calc(1.5vw);
+    color: black;
+    margin: 0;
+}
+
+.footerLowerRight{
+    width: 35%;
+    display: flex;
+    justify-content: end;
+}
+
+.footerLowerRight p{
+    font-family: 'lgcd';
+    font-size: calc(1.5vw);
+    color: black;
+    margin: 0;
+}
