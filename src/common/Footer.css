@@ -3,8 +3,8 @@
     background-color: #395198;
     background-image: url(https://res.cloudinary.com/dznnm9b1j/image/upload/v1740111475/Main_Frame_cbu5g1.png);
     background-size: cover;
-    padding: 10% 0 2% 0;
-    margin-top: 17%;
+    padding: 3% 0 0 0;
+    margin-top: 15%;
 }
 
 @font-face {
@@ -20,11 +20,11 @@
     align-items: center;
     width: 87%;
     margin: auto;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
 }
 
 .footerSocialMedia{
-    width: 19%;
+    width: 15%;
     display: flex;
     flex-direction: column;
 }
@@ -62,7 +62,7 @@
     font-family: 'lgcd';
     text-decoration: none;
     color: white;
-    font-size: calc(2vw);
+    font-size: calc(1.7vw);
     margin: 15% 0 20% 0;
 }
 
@@ -98,7 +98,7 @@
 .contactNumber {
     width: 65%;
     display: flex;
-    padding: 4% 0;
+    padding: 3% 0;
     align-items: center;
     justify-content: space-around;
     background-color: black;
@@ -124,8 +124,9 @@
 
 .footerFormInput input{
     font-family: 'lgcd';
+    outline: none;
     width: 95.5%;
-    padding: 4.5% 2%;
+    padding: 3.5% 2%;
     font-size: 1.4vw;
     border: none;
     color: rgba(0,0,0,1);
@@ -140,7 +141,7 @@
     font-family: 'lgcd';
     width: 98%;
     resize: none;
-    padding: 2.5% 0% 20% 1.5%;
+    padding: 2.5% 0% 14% 1.5%;
     font-size: 1.4vw;
     border: none;
     margin-bottom: 1.7%;
@@ -166,12 +167,12 @@
 .progressBar::-webkit-slider-runnable-track{
     width: 100%;
     background-color: white;
-    padding: 1.5% 3%;
+    padding: 0.8% 2.5%;
 }
 
 .progressBar::-webkit-slider-thumb{
     appearance: none;
-    padding: 6.5% 0;
+    padding: 6% 0;
     width: 13%;
     background-color: black;  
     background-image: url(https://res.cloudinary.com/dznnm9b1j/image/upload/v1740116906/greater-than-symbol_1_xxtyhv.png);
