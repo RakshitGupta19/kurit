@@ -139,6 +139,7 @@
 
 .footerFormInput textarea{
     font-family: 'lgcd';
+    outline: none;
     width: 98%;
     resize: none;
     padding: 2.5% 0% 14% 1.5%;
