@@ -168,7 +168,7 @@
 .progressBar::-webkit-slider-runnable-track{
     width: 100%;
     background-color: white;
-    padding: 0.8% 2.5%;
+    padding: 1% 2.5%;
 }
 
 .progressBar::-webkit-slider-thumb{
