@@ -14,9 +14,9 @@ const Footer=()=>{
                         <img src={Kurit} alt="" />
                     </div>
                     <div className="footerNavLinks">
-                        <a href="#"><span>Home</span></a>
-                        <a href="#"><span>About</span></a>
-                        <a href="#"><span>Contact</span></a>
+                        <a href="/"><span>Home</span></a>
+                        <a href="/about"><span>About</span></a>
+                        <a href="/contact"><span>Contact</span></a>
                     </div>
                     <div className="footerSocialLinks">
                         <a href="#"><span>Instagram</span></a>

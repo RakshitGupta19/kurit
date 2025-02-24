@@ -1,17 +1,18 @@
 import React from 'react';
 import './Header.css';
+import Kurit from '../assets/KuritIcon.png'
 
 function Header(){
     return(
         <div className="mainNavbar">
             <div className='navbar'>
                 <div className="navbarImg">
-                    <img src="https://res.cloudinary.com/dznnm9b1j/image/upload/v1740030603/Kurit_dxaoxt.png" alt="" />
+                    <img src={Kurit} alt="" />
                 </div>
                 <div className="navbarItems">
                     <a href="/"><span>Home</span></a>
                     <a href="/about"><span>About</span></a>
-                    <a href="#"><span>Contact</span></a>
+                    <a href="/contact"><span>Contact</span></a>
                 </div>
                 <div className="navbarContact">
                     <div className="contactUsHeading">
