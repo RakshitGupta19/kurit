@@ -1,0 +1,81 @@
+.whoweare{
+    width: 94%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8%;
+}
+
+.leftsection{
+    width: 48.5%;
+    display: flex;
+    flex-direction: column;
+    padding: 4% 0;
+}
+
+.leftsection h1{
+    font-family: "Washington";
+    font-weight: 100;
+    font-size: calc(2.4vw);
+    margin: 0;
+    margin-bottom: 3%;
+}
+
+.leftsection p{
+    margin: 0;
+    font-size: calc(1.54vw);
+    margin-bottom: 3%;
+}
+
+.navbarCo{
+    width: 44%;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    padding: 0.4%;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.contactUs{
+    width: 38%;
+    display: flex;
+}
+
+.contactUs p {
+    font-family: 'lgcd';
+    margin: 0;
+    font-size: 1.4vw;
+    font-weight: 700;
+    color: black;
+}
+
+.navbarCoNumber {
+    width: 62%;
+    display: flex;
+    padding: 4% 0;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+}
+
+.navbarCoNumber p {
+    font-family: 'lgcd';
+    color: white;
+    margin: 0;
+    font-size: 1.4vw;
+    font-weight: 700;
+}
+
+.navbarCoNumber img {
+    width: 9%;
+}
+
+.rightsection{
+    width: 46%;
+}
+
+.rightsection img{
+    height: 100%;
+    width: 100%;
+}
