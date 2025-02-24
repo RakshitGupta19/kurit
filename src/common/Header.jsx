@@ -9,8 +9,8 @@ function Header(){
                     <img src="https://res.cloudinary.com/dznnm9b1j/image/upload/v1740030603/Kurit_dxaoxt.png" alt="" />
                 </div>
                 <div className="navbarItems">
-                    <a href="#"><span>Home</span></a>
-                    <a href="#"><span>About</span></a>
+                    <a href="/"><span>Home</span></a>
+                    <a href="/about"><span>About</span></a>
                     <a href="#"><span>Contact</span></a>
                 </div>
                 <div className="navbarContact">
