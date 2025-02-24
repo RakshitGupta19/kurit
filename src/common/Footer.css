@@ -1,10 +1,16 @@
+.completeFooter{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 .footer{
     width: 100%;
-    border: 1px solid black;
     display: flex;
     background-color: #395198;
     padding: 1.8% 0;
     overflow: hidden;
+    margin-top: 10%;
 }
 
 .footerUpper{
@@ -16,13 +22,12 @@
     display: flex;
     justify-content: space-around;
     width: 75%;
-    border: 1px solid black;
     background-color: white;
+    padding: 1% 0;
 }
 
 .footerKuritImg{
     width: 10%;
-    border: 1px solid black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,24 +38,22 @@
 }
 
 .footerNavLinks{
-    width: 10%;
+    width: 8%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    border: 1px solid black;
 }
 
 .footerNavLinks a{
     text-decoration: none;
     color: black;
-    font-size: calc(1.6vw);
-    margin: 7% 0;
+    font-size: calc(1.5vw);
+    margin: 12% 0;
 }
 
 .footerSocialLinks{
     width: 9%;
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -74,14 +77,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 1px solid black;
 }
 
 .footerC{
-    width: 75%;
+    width: 80%;
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
     margin-bottom: 4%;
 }
 
@@ -92,8 +93,53 @@
 }
 
 .footerC .fp{
+    font-family: "lgcd";
     margin: 0;
     font-size: calc(1.35vw);
+}
+
+.navbarC {
+    width: 90%;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    padding: 0.7%;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.contactU {
+    width: 35%;
+    display: flex;
+}
+
+.contactU p {
+    font-family: 'lgcd';
+    margin: 0;
+    font-size: 1.3vw;
+    font-weight: 700;
+    color: black;
+}
+
+.navbarContactN {
+    width: 65%;
+    display: flex;
+    padding: 4% 0;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+}
+
+.navbarContactN p {
+    font-family: 'lgcd';
+    color: white;
+    margin: 0;
+    font-size: 1.5vw;
+    font-weight: 700;
+}
+
+.navbarContactN img {
+    width: 9%;
 }
 
 .fRightImg{
@@ -103,4 +149,30 @@
 .fRightImg img{
     width: 100%;
     transform: scale(1.28);
+}
+
+.footerLower{
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6% 4%;
+}
+
+.footerFirst{
+    width: 19%;
+}
+
+.footerSecond{
+    width: 21%;
+}
+
+.footerFirst p{
+    font-family: "lgcd";
+    margin: 0;
+}
+
+.footerSecond p{
+    font-family: "lgcd";
+    margin: 0;
 }

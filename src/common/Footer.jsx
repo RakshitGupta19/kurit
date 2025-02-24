@@ -5,6 +5,7 @@ import Kurit from '../assets/KuritIcon.png';
 
 const Footer=()=>{
     return(
+    <div className="completeFooter">    
         <div className="footer">
             <div className="footerUpper">
 
@@ -32,6 +33,16 @@ const Footer=()=>{
                             <p className="fh">Email</p>
                             <p className="fp">yuktam@kurit.in</p>
                         </div>
+
+                        <div className="navbarC">
+                            <div className="contactU">
+                                <p>Contact Us</p>
+                            </div>
+                            <div className="navbarContactN">
+                                <p>+91 95177 77992</p>
+                                <img src="https://res.cloudinary.com/dznnm9b1j/image/upload/v1740036744/up-right-arrow_ovtgwy.png" alt="" />
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -40,6 +51,15 @@ const Footer=()=>{
                 </div>
             </div>
         </div>
+        <div className="footerLower">
+            <div className="footerFirst">
+                <p>Copyright by Kurit 25-2026</p>
+            </div>
+            <div className="footerSecond">
+                <p>Designed & Developed by PITAMAAS</p>
+            </div>
+        </div>
+    </div>
     ) 
 }
 
