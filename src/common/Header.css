@@ -1,4 +1,3 @@
-/* Header.css */
 @font-face {
     font-family: 'CustomFont';
     src: url('../Font/Lgcd.ttf') format('truetype');
@@ -22,40 +21,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.hamburger {
-    display: none;
-    cursor: pointer;
-    padding: 15px;
-}
-
-.hamburger-lines {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 24px;
-    width: 30px;
-}
-
-.hamburger-lines span {
-    display: block;
-    height: 3px;
-    width: 100%;
-    background-color: black;
-    transition: all 0.3s ease;
-}
-
-.hamburger-lines.active span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 10px);
-}
-
-.hamburger-lines.active span:nth-child(2) {
-    opacity: 0;
-}
-
-.hamburger-lines.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -10px);
 }
 
 .navbarImg {
@@ -121,7 +86,7 @@
     width: 9%;
 }
 
-@media screen and (max-width: 768px) {  /* 768px */
+@media screen and (max-width: 768px) {
     .navbar {
         padding: 2% 0;
     }
@@ -157,7 +122,7 @@
     }
 }
 
-@media screen and (max-width: 480px) {  /* 480px */
+@media screen and (max-width: 480px) {
     .navbar {
         padding: 3% 0;
     }
