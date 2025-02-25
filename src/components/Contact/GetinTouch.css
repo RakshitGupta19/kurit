@@ -33,7 +33,7 @@
     width: 100%;
     background-image: url(../../assets/image.png);
     background-size: cover;
-    padding: 5% 0 50%;
+    padding: 5% 0 42% 0;
     display: flex;
     flex-direction: column; 
     justify-content: start;
