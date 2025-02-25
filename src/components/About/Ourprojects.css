@@ -25,9 +25,13 @@
     overflow-x: auto;
     white-space: nowrap;
     scroll-snap-type: x mandatory;
-    
     scrollbar-width: none;
     -ms-overflow-style: none;
+    cursor: grab;
+}
+
+.ourproject:active {
+    cursor: grabbing;
 }
 
 .ourproject::-webkit-scrollbar {
