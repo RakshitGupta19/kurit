@@ -38,18 +38,6 @@
     display: none;
 }
 
-.p1{
-    background-image: url(../../assets/scroll1.png);
-}
-
-.p2{
-    background-image: url(../../assets/scroll2.png);
-}
-
-.p3{
-    background-image: url(../../assets/scroll3.png);
-}
-
 .imagediv {
     width: 50%;
     flex-shrink: 0;

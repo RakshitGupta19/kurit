@@ -1,5 +1,11 @@
-import React, { useRef, useState } from "react";
-import './Ourprojects.css';
+import React, { useEffect, useRef, useState } from "react";
+import "./Ourprojects.css";
+
+const projects = [
+    { name: "DREAMCITY LUDHIANA", img: require("../../assets/scroll1.png") },
+    { name: "UMBERA ORCHARD", img: require("../../assets/scroll2.png") },
+    { name: "RAJGADH ESTATE", img: require("../../assets/scroll3.png") },
+];
 
 const Ourproject = () => {
     const scrollRef = useRef(null);
@@ -7,20 +13,42 @@ const Ourproject = () => {
     const [startX, setStartX] = useState(0);
     const [scrollLeft, setScrollLeft] = useState(0);
 
+    useEffect(() => {
+        const scrollElement = scrollRef.current;
+        if (!scrollElement) return;
+
+        let scrollSpeed = 0.7; // Adjust speed for smooth scrolling
+
+        const scrollLoop = () => {
+            if (!isDragging) {
+                scrollElement.scrollLeft += scrollSpeed;
+                if (scrollElement.scrollLeft >= scrollElement.scrollWidth / 2) {
+                    scrollElement.scrollLeft = 0; // Seamless reset
+                }
+            }
+            requestAnimationFrame(scrollLoop);
+        };
+
+        scrollLoop();
+    }, [isDragging]);
+
+    // Handle Mouse Press
     const handleMouseDown = (e) => {
         setIsDragging(true);
         setStartX(e.pageX - scrollRef.current.offsetLeft);
         setScrollLeft(scrollRef.current.scrollLeft);
     };
 
+    // Handle Mouse Move
     const handleMouseMove = (e) => {
         if (!isDragging) return;
         e.preventDefault();
         const x = e.pageX - scrollRef.current.offsetLeft;
-        const walk = (x - startX) * 2; // Adjust the speed of the scroll
+        const walk = (x - startX) * 2; // Adjust for sensitivity
         scrollRef.current.scrollLeft = scrollLeft - walk;
     };
 
+    // Handle Mouse Release
     const handleMouseUp = () => {
         setIsDragging(false);
     };
@@ -28,47 +56,36 @@ const Ourproject = () => {
     return (
         <div className="ourprojectsection">
             <div className="ourprojectHeading">
-                <p>Our Project</p>
+                <p>Our Projects</p>
             </div>
 
             <div 
-                className="ourproject" 
-                ref={scrollRef} 
+                className="ourproject"
+                ref={scrollRef}
                 onMouseDown={handleMouseDown}
                 onMouseMove={handleMouseMove}
-                onMouseUp={handleMouseUp}
                 onMouseLeave={handleMouseUp}
+                onMouseUp={handleMouseUp}
             >
-                <div className="imagediv p1">
-                    <p>DREAMCITY LUDHIANA</p>
-                    <div className="navbarCont">
-                        <div className="contactUsHead"><p>Contact Us</p></div>
-                        <div className="navbarContactNu">
-                            <p>+91 95177 77992</p>
-                            <img src="https://res.cloudinary.com/dznnm9b1j/image/upload/v1740036744/up-right-arrow_ovtgwy.png" alt="" />
+                {/* Duplicate images for smooth infinite scrolling */}
+                {[...projects, ...projects].map((project, index) => (
+                    <div
+                        key={index}
+                        className="imagediv"
+                        style={{ backgroundImage: `url(${project.img})` }}
+                    >
+                        <p>{project.name}</p>
+                        <div className="navbarCont">
+                            <div className="contactUsHead">
+                                <p>Contact Us</p>
+                            </div>
+                            <div className="navbarContactNu">
+                                <p>+91 95177 77992</p>
+                                <img src="https://res.cloudinary.com/dznnm9b1j/image/upload/v1740036744/up-right-arrow_ovtgwy.png" alt="" />
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="imagediv p2">
-                    <p>UMBERA ORCHARD</p>
-                    <div className="navbarCont">
-                        <div className="contactUsHead"><p>Contact Us</p></div>
-                        <div className="navbarContactNu">
-                            <p>+91 95177 77992</p>
-                            <img src="https://res.cloudinary.com/dznnm9b1j/image/upload/v1740036744/up-right-arrow_ovtgwy.png" alt="" />
-                        </div>
-                    </div>
-                </div>
-                <div className="imagediv p3">
-                    <p>RAJGADH ESTATE</p>
-                    <div className="navbarCont">
-                        <div className="contactUsHead"><p>Contact Us</p></div>
-                        <div className="navbarContactNu">
-                            <p>+91 95177 77992</p>
-                            <img src="https://res.cloudinary.com/dznnm9b1j/image/upload/v1740036744/up-right-arrow_ovtgwy.png" alt="" />
-                        </div>
-                    </div>
-                </div>
+                ))}
             </div>
         </div>
     );
