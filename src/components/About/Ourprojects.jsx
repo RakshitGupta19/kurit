@@ -56,20 +56,9 @@ const Ourproject = () => {
                 <p>Our Projects</p>
             </div>
 
-            <div 
-                className="ourproject"
-                ref={scrollRef}
-                onMouseDown={handleMouseDown}
-                onMouseMove={handleMouseMove}
-                onMouseLeave={handleMouseUp}
-                onMouseUp={handleMouseUp}
-            >
+            <div className="ourproject" ref={scrollRef} onMouseDown={handleMouseDown} onMouseMove={handleMouseMove} onMouseLeave={handleMouseUp} onMouseUp={handleMouseUp} >
                 {[...projects, ...projects].map((project, index) => (
-                    <div
-                        key={index}
-                        className="imagediv"
-                        style={{ backgroundImage: `url(${project.img})` }}
-                    >
+                    <div key={index} className="imagediv" style={{ backgroundImage: `url(${project.img})` }} >
                         <p>{project.name}</p>
                         <div className="navbarCont">
                             <div className="contactUsHead">
