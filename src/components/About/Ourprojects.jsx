@@ -9,7 +9,7 @@ const projects = [
 
 const Ourproject = () => {
     const scrollRef = useRef(null);
-    const [isDragging, setIsDragging] = useState(false);
+    const isDraggingRef = useRef(false); // Use a ref to track dragging state
     const [startX, setStartX] = useState(0);
     const [scrollLeft, setScrollLeft] = useState(0);
 
@@ -20,7 +20,7 @@ const Ourproject = () => {
         let scrollSpeed = 0.7;
 
         const scrollLoop = () => {
-            if (!isDragging) {
+            if (!isDraggingRef.current) {
                 scrollElement.scrollLeft += scrollSpeed;
                 if (scrollElement.scrollLeft >= scrollElement.scrollWidth / 2) {
                     scrollElement.scrollLeft = 0;
@@ -30,16 +30,16 @@ const Ourproject = () => {
         };
 
         scrollLoop();
-    }, [isDragging]);
+    }, []);
 
     const handleMouseDown = (e) => {
-        setIsDragging(true);
+        isDraggingRef.current = true; // Set dragging state
         setStartX(e.pageX - scrollRef.current.offsetLeft);
         setScrollLeft(scrollRef.current.scrollLeft);
     };
 
     const handleMouseMove = (e) => {
-        if (!isDragging) return;
+        if (!isDraggingRef.current) return;
         e.preventDefault();
         const x = e.pageX - scrollRef.current.offsetLeft;
         const walk = (x - startX) * 2;
@@ -47,7 +47,7 @@ const Ourproject = () => {
     };
 
     const handleMouseUp = () => {
-        setIsDragging(false);
+        isDraggingRef.current = false; // Reset dragging state
     };
 
     return (
@@ -56,9 +56,16 @@ const Ourproject = () => {
                 <p>Our Projects</p>
             </div>
 
-            <div className="ourproject" ref={scrollRef} onMouseDown={handleMouseDown} onMouseMove={handleMouseMove} onMouseLeave={handleMouseUp} onMouseUp={handleMouseUp} >
+            <div 
+                className="ourproject" 
+                ref={scrollRef} 
+                onMouseDown={handleMouseDown} 
+                onMouseMove={handleMouseMove} 
+                onMouseLeave={handleMouseUp} 
+                onMouseUp={handleMouseUp}
+            >
                 {[...projects, ...projects].map((project, index) => (
-                    <div key={index} className="imagediv" style={{ backgroundImage: `url(${project.img})` }} >
+                    <div key={index} className="imagediv" style={{ backgroundImage: `url(${project.img})` }}>
                         <p>{project.name}</p>
                         <div className="navbarCont">
                             <div className="contactUsHead">
