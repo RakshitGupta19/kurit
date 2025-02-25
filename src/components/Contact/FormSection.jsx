@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import './FormSection.css';
 
 const FormSection=()=>{
+    const [progress, setProgress] = useState(0);
     return(
         <div className="formS">
             <div className="formStart">
@@ -16,7 +17,14 @@ const FormSection=()=>{
                         <input type="number" placeholder="Phone No."/>
                         <input type="email" placeholder="Email"/>
                         <textarea placeholder="Message"></textarea>
-                        <input type="range" min={0} max={100} step={1} className="progressBar" />
+                        <input 
+                            type="range" 
+                            min={0} 
+                            max={100} 
+                            value={progress} 
+                            onChange={(e) => setProgress(e.target.value)} 
+                            className="progressBar" 
+                        />
                     </div>
 
                     <div className="formMap">
