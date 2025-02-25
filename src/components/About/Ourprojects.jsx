@@ -17,13 +17,13 @@ const Ourproject = () => {
         const scrollElement = scrollRef.current;
         if (!scrollElement) return;
 
-        let scrollSpeed = 0.7; // Adjust speed for smooth scrolling
+        let scrollSpeed = 0.7;
 
         const scrollLoop = () => {
             if (!isDragging) {
                 scrollElement.scrollLeft += scrollSpeed;
                 if (scrollElement.scrollLeft >= scrollElement.scrollWidth / 2) {
-                    scrollElement.scrollLeft = 0; // Seamless reset
+                    scrollElement.scrollLeft = 0;
                 }
             }
             requestAnimationFrame(scrollLoop);
@@ -32,23 +32,20 @@ const Ourproject = () => {
         scrollLoop();
     }, [isDragging]);
 
-    // Handle Mouse Press
     const handleMouseDown = (e) => {
         setIsDragging(true);
         setStartX(e.pageX - scrollRef.current.offsetLeft);
         setScrollLeft(scrollRef.current.scrollLeft);
     };
 
-    // Handle Mouse Move
     const handleMouseMove = (e) => {
         if (!isDragging) return;
         e.preventDefault();
         const x = e.pageX - scrollRef.current.offsetLeft;
-        const walk = (x - startX) * 2; // Adjust for sensitivity
+        const walk = (x - startX) * 2;
         scrollRef.current.scrollLeft = scrollLeft - walk;
     };
 
-    // Handle Mouse Release
     const handleMouseUp = () => {
         setIsDragging(false);
     };
@@ -67,7 +64,6 @@ const Ourproject = () => {
                 onMouseLeave={handleMouseUp}
                 onMouseUp={handleMouseUp}
             >
-                {/* Duplicate images for smooth infinite scrolling */}
                 {[...projects, ...projects].map((project, index) => (
                     <div
                         key={index}
