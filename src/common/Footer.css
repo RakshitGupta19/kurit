@@ -182,7 +182,7 @@
 
 /* CSS For Mobile View */
 .footerMobile{
-    width: 100%;
+    width: 95%;
     display: flex;
     flex-direction: column;
     background-color: #395198;
@@ -190,7 +190,7 @@
 }
 
 .innerwhite{
-    width: 95%;
+    width: 99%;
     background-color: white;
     padding: 3% 0 2% 0;
     display: flex;
