@@ -70,6 +70,7 @@
     padding: 0;
     margin: 0;
     position: relative;
+    overflow: hidden;
 }
 
 .formInputs .progressBar::-webkit-slider-runnable-track{
@@ -85,6 +86,7 @@
     background-color: #395198;  
     background-image: url(https://res.cloudinary.com/dznnm9b1j/image/upload/v1740116906/greater-than-symbol_1_xxtyhv.png);
     background-size: cover; 
+    z-index: 2;
 }
 
 .formMap{
