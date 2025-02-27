@@ -25,6 +25,8 @@
 
 .navbarImg {
     width: 5.5%;
+    display: flex;
+    align-items: center;
 }
 
 .navbarImg img {
@@ -86,6 +88,135 @@
     width: 9%;
 }
 
+/* Keep your existing CSS and add/modify these styles */
+
+/* Hamburger Menu Styles */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    z-index: 100;
+  }
+  
+  .bar {
+    display: block;
+    width: 6vw;
+    height: 0.4vh;
+    margin: 1vh 0;
+    background-color: #000;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Hamburger Animation */
+  .bar.active:nth-child(1) {
+    transform: translateY(1.5vh) rotate(45deg);
+  }
+  
+  .bar.active:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .bar.active:nth-child(3) {
+    transform: translateY(-1.5vh) rotate(-45deg);
+  }
+  
+  /* Mobile Menu Styles */
+  .mobileMenu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100vh;
+    background-color: white;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 99;
+  }
+  
+  .mobileMenu.active {
+    transform: translateX(0);
+  }
+  
+  .mobileNavItems {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 5vh;
+  }
+  
+  .mobileNavItems a {
+    text-decoration: none;
+    color: black;
+    font-size: 5vw;
+    font-weight: 700;
+    opacity: 0;
+    transform: translateX(-2vw);
+    animation: slideIn 0.5s ease forwards;
+  }
+
+  .menu-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(67, 67, 70, 0.5); /* Blue overlay with 30% opacity */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 98; /* Below the mobile menu but above everything else */
+  }
+  
+  .menu-overlay.active {
+    opacity: 1;
+  }
+  
+  @keyframes slideIn {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Update your existing media queries */
+  @media screen and (max-width: 768px) {
+    /* Your existing mobile styles */
+  
+    .hamburger {
+      display: block;
+    }
+
+    .menu-overlay {
+      display: block;
+    }
+  
+    .mobileMenu {
+      display: block;
+    }
+  
+    /* Prevent body scroll when menu is open */
+    body.menu-open {
+      overflow: hidden;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    /* Your existing mobile styles */
+    .bar {
+      width: 7vw;
+      height: 0.3vh;
+      margin: 1.2vh 0;
+    }
+  
+    .mobileNavItems a {
+      font-size: 6vw;
+    }
+  }
+  
+  
+
 @media screen and (max-width: 768px) {
     body{
         overflow-x: hidden;
@@ -95,7 +226,12 @@
     }
 
     .navbarImg {
-        width: 10%;
+        width: 20%;
+        justify-content: space-between;
+    }
+
+    .navbarImg img{
+        width: 55%;
     }
 
     .navbarItems {
@@ -135,7 +271,11 @@
     }
 
     .navbarImg {
-        width: 14%;
+        width: 27%;
+    }
+
+    .navbarImg img{
+        width: 51%;
     }
 
     .navbarContact {
@@ -161,3 +301,4 @@
         padding: 2% 0;
     }
 }
+

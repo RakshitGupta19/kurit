@@ -17,7 +17,7 @@ const Ourproject = () => {
         const scrollElement = scrollRef.current;
         if (!scrollElement) return;
 
-        let scrollSpeed = 0.7;
+        let scrollSpeed = 1;
 
         const scrollLoop = () => {
             if (!isDraggingRef.current) {
