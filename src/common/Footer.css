@@ -190,7 +190,7 @@
 }
 
 .innerwhite{
-    width: 99%;
+    width: 100%;
     background-color: white;
     padding: 3% 0 2% 0;
     display: flex;
@@ -260,7 +260,7 @@
 }
 
 .navbarCm {
-    width: 69%;
+    width: 68%;
     display: flex;
     align-items: end;
     justify-content: space-between;
@@ -277,7 +277,7 @@
 .contactUm p {
     font-family: 'lgcd';
     margin: 0;
-    font-size: 3.1vw;
+    font-size: 3.2vw;
     font-weight: 700;
     color: black;
 }
