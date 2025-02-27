@@ -82,6 +82,7 @@
 .formInputs .progressBar::-webkit-slider-thumb{
     appearance: none;
     padding: 5% 0;
+    position: relative;
     width: 10%;
     background-color: #395198;  
     background-image: url(https://res.cloudinary.com/dznnm9b1j/image/upload/v1740116906/greater-than-symbol_1_xxtyhv.png);
