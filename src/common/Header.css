@@ -87,6 +87,9 @@
 }
 
 @media screen and (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
     .navbar {
         padding: 2% 0;
     }
@@ -124,6 +127,9 @@
 }
 
 @media screen and (max-width: 480px) {
+    body{
+        overflow-x: hidden;
+    }
     .navbar {
         padding: 1% 0;
     }
