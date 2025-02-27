@@ -31,3 +31,19 @@ body {
     font-size: calc(2.1vw);
     font-weight: normal;
 }
+
+@media (max-width: 575px){
+    .banner img{
+        display: none;
+    }
+    .banner{
+        background-image: url(https://res.cloudinary.com/dznnm9b1j/image/upload/v1740552657/Group_14_isgb05.png);
+        /* background-size: cover; */
+        padding: 75% 0;
+        background-size: 100% 100%;
+    }
+
+    .banner .bannerText{
+        display: none;
+    }
+}

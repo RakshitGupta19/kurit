@@ -55,3 +55,32 @@
     font-family: 'lgcd';
 }
 
+@media (max-width: 575px){
+    .aboutUs{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .aboutHeading{
+        width: 93%;
+        justify-content: start;
+        margin: auto;
+    }
+    .aboutHeading p{
+        font-size: 5.5vw;
+        margin: 0;
+    }
+    .aboutContent{
+        width: 93%;
+        margin: auto;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+    
+    .aboutContent p{
+        font-size: calc(4.3vw);
+        font-family: 'CustomFont';
+    }
+}

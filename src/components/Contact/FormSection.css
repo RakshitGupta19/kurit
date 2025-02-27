@@ -108,3 +108,56 @@
     pointer-events: none;
     z-index: 1;
 }
+
+@media (max-width: 575px){
+    .formStart{
+        width: 93%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formHead{
+        width: 93%;
+        margin-bottom: 6%;
+    }
+
+    .formHead .fh{
+        font-size: 5.5vw;
+    }
+    
+    .formHead .fp{
+        font-size: 4.3vw;
+    }
+
+    .formLower{
+        flex-direction: column;
+    }
+
+    .formInputs{
+        width: 99%;
+        margin-bottom: 8%;
+    }
+
+    .formInputs input{
+        font-size: 3.3vw;
+        margin-bottom: 1.5%;
+    }
+
+    .formInputs textarea{
+        font-size: 3.3vw;
+        margin-bottom: 1.5%;
+    }
+
+    .formInputs .progressBar{
+        width: 99.5%
+    }
+
+    .formInputs .progressBar::before {
+        font-size: 3vw;
+    }
+
+    .formMap{
+        width: 99%;
+        height: 70vw;
+    }
+}

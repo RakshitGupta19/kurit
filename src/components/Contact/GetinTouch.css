@@ -113,3 +113,52 @@
     color: black;
     font-size: calc(1.4vw);
 }
+
+@media (max-width: 575px){
+    .aboutSection{
+        width: 93%;
+        grid-template-columns: repeat(1,1fr);
+        margin-top: 14%;
+    }
+
+    .aboutSectionContent{
+        margin-bottom: 2%;
+    }
+    
+    .aboutSectionContent h1{
+        font-size: 5.4vw;
+    }
+    
+    .aboutSectionContent p{
+        font-size: 4.3vw;
+    }
+
+    .aboutSectionImage{
+        padding: 5% 0 36% 0;
+        margin-bottom: 8%;
+    }
+
+    .upperContent .uh{
+        font-size: calc(3.2vw);
+    }
+    
+    .upperContent2 .uh{
+        font-size: calc(3.2vw);
+    }
+    
+    .upperContent .up{
+        font-size: calc(3.2vw);
+    }
+    
+    .upperContent2 .up{
+        font-size: calc(3.2vw);
+    }
+
+    .LowerContent .lh{
+        font-size: calc(3.2vw);
+    }
+    
+    .LowerContent .lp{
+        font-size: calc(3.2vw);
+    }
+}

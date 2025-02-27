@@ -28,7 +28,7 @@ const FormSection=()=>{
                     </div>
 
                     <div className="formMap">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3423.9427500942074!2d75.8031968!3d30.8882625!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a8181f5f9ef23%3A0xaca3c50f2aaaaf2b!2sBhai%20Randhir%20Singh%20Nagar%2C%20Ludhiana%2C%20Punjab!5e0!3m2!1sen!2sin!4v1740221015133!5m2!1sen!2sin" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3423.9427500942074!2d75.8031968!3d30.8882625!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a8181f5f9ef23%3A0xaca3c50f2aaaaf2b!2sBhai%20Randhir%20Singh%20Nagar%2C%20Ludhiana%2C%20Punjab!5e0!3m2!1sen!2sin!4v1740221015133!5m2!1sen!2sin" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="iframe"></iframe>
                     </div>
                 </div>
             </div>

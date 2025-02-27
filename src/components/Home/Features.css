@@ -65,3 +65,36 @@
 .featuresItem span{
     font-family: 'washington';
 }
+
+@media (max-width:575px){
+    .featuresHeading{
+        width: 93%;
+        margin: auto;
+        display: flex;
+        justify-content: start;
+    }
+    .featuresHeading p{
+        font-family: 'washington';
+        color: black;
+        font-size: calc(5.5vw);
+        margin: 0
+    }
+    .featuresContent{
+        flex-direction: column;
+    }
+    .featuresItem{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        margin-bottom: 2%;
+    }
+    .featuresItem img{
+        width: 40%;
+        margin-bottom: 2%;
+    }
+    .featuresItem p{
+        font-size: calc(4.3vw);
+    }
+}

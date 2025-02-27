@@ -79,3 +79,43 @@
     height: 100%;
     width: 100%;
 }
+
+@media (max-width: 575px){
+    .whoweare{
+        width: 93%;
+        flex-direction: column;
+    }
+    .leftsection{
+        width: 93%;
+        padding: 4% 0;
+    }
+    .leftsection h1{
+        font-size: calc(5.5vw);
+        margin-bottom: 4%;
+    }
+    
+    .leftsection p{
+        margin: 0;
+        font-size: calc(4.8vw);
+        margin-bottom: 3%;
+    }
+
+    .navbarCo{
+        width: 76%;
+        padding: 1%;
+        margin-top: 2%;
+    }
+    .navbarCoNumber {
+        width: 70%;
+    }
+
+    .rightsection{
+        width: 100%;
+        margin-top: 5%;
+    }
+    
+    .rightsection img{
+        height: 100%;
+        width: 100%;
+    }
+}

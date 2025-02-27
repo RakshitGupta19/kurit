@@ -60,11 +60,11 @@ const Venue = () => {
           <div className="venuwLowerDetail">
             <div className="venueLowerDHeading">
               <p>DREAMCITY LUDHIANA</p>
-              <div className="navbarContact">
-                <div className="contactUsHeading">
+              <div className="navbarCc">
+                <div className="contactUu">
                   <p>Contact Us</p>
                 </div>
-                <div className="navbarContactNumber">
+                <div className="navbarCn">
                   <p>+91 95177 77992</p>
                   <img src="https://res.cloudinary.com/dznnm9b1j/image/upload/v1740036744/up-right-arrow_ovtgwy.png" alt="" />
                 </div>
