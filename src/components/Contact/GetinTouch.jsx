@@ -1,14 +1,21 @@
 import React from "react";
 import './GetinTouch.css';
+import { useEffect } from "react";
+import AOS from "aos";
 
 const GetinTouch=()=>{
+    useEffect(() => {
+            AOS.init({
+              duration: 1000,
+            });
+          }, []);
     return(
         <div className="aboutSection">
             <div className="aboutSectionContent">
-                <h1>Get in Touch with Kurit Consultants</h1>
-                <p>Looking for expert guidance in <span>Real Estate Portfolio Management?</span> We're here to help! Connect with us for personalized investments solutions and premium property opportunities.</p>
+                <h1 data-aos="fade-up" data-aos-anchor-placement="top-center">Get in Touch with Kurit Consultants</h1>
+                <p data-aos="fade-up" data-aos-anchor-placement="top-center">Looking for expert guidance in <span>Real Estate Portfolio Management?</span> We're here to help! Connect with us for personalized investments solutions and premium property opportunities.</p>
             </div>
-            <div className="aboutSectionImage">
+            <div className="aboutSectionImage" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                 <div className="asUpper">
                     <div className="upperContent">
                         <p className="uh">Address</p>

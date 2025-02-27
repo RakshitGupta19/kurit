@@ -7,7 +7,7 @@ import growth from '../../assets/growth.png';
 
 const Choosekurit=()=>{
     return(
-        <div className="choosekurit">
+        <div className="choosekurit" data-aos="zoom-in-down">
             <div className="centertext">
                 <p className="centerupper">Invest smart. Grow strong.</p>
                 <p className="centerlower">Choose Kurit.</p>

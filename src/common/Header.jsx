@@ -51,7 +51,7 @@ function Header() {
             </div>
           </div>
 
-          <img src={Kurit || "/placeholder.svg"} alt="" />
+          <a href="/"><img src={Kurit || "/placeholder.svg"} alt="" /></a>
         </div>
 
         <div className="navbarItems">

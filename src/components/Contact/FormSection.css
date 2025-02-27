@@ -161,6 +161,6 @@
 
     .formMap{
         width: 99%;
-        height: 70vw;
+        height: calc(35vw + 35vh);
     }
 }
