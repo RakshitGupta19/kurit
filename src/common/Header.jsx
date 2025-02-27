@@ -48,6 +48,13 @@ function Header() {
         <img src={Kurit || "/placeholder.svg"} alt="" />
         </div>
 
+        <div className="navbarItems">
+                    <a href="/"><span>Home</span></a>
+
+                    <a href="/about"><span>About</span></a>
+                    <a href="/contact"><span>Contact</span></a>
+                </div>
+
         
 
         
