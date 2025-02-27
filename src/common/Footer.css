@@ -357,13 +357,16 @@
 }
 
 
-@media (min-width:575px){
+@media (min-width:574px){
     .footerMobile{
         display: none;
     }
 }
 
 @media (max-width: 575px){
+    .completeFooter{
+        overflow: hidden;
+    }
     .footer{
         display: flex;
         background-color: white;
