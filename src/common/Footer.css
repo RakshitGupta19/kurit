@@ -356,7 +356,6 @@
     transform: translateY(17%) scaleX(1);
 }
 
-
 @media (min-width:574px){
     .footerMobile{
         display: none;

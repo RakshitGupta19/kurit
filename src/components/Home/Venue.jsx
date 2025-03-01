@@ -9,9 +9,9 @@ const images = [
 
 const propertiesList = [
   { name: "500+* Acre Smart Township", img: "https://res.cloudinary.com/dznnm9b1j/image/upload/v1740030989/Background_Image_xxv3gf.png" },
-  { name: "7.4-Acre Central Lake", img: "https://res.cloudinary.com/dznnm9b1j/image/upload/v1740030925/Image-1_p7l0c6.png" },
-  { name: "Club Aqua", img: "https://res.cloudinary.com/dznnm9b1j/image/upload/v1740030924/Image-2_mqwuxs.png" },
-  { name: "Integrated Amenities", img: "https://res.cloudinary.com/dznnm9b1j/image/upload/v1740030939/Image_g8stec.png" },
+  { name: "7.4-Acre Central Lake", img: "https://res.cloudinary.com/dznnm9b1j/image/upload/v1740030989/Background_Image_xxv3gf.png" },
+  { name: "Club Aqua", img: "https://res.cloudinary.com/dznnm9b1j/image/upload/v1740030989/Background_Image_xxv3gf.png" },
+  { name: "Integrated Amenities", img: "https://res.cloudinary.com/dznnm9b1j/image/upload/v1740030989/Background_Image_xxv3gf.png" },
   { name: "Green Environment", img: "https://res.cloudinary.com/dznnm9b1j/image/upload/v1740030989/Background_Image_xxv3gf.png" }
 ];
 
@@ -44,7 +44,10 @@ const Venue = () => {
   return (
     <div className="bigdiv">
       <div className="venue">
-        <div className="venueUpper">
+        
+        <div className="venueLower">
+
+        {/* <div className="venueUpper">
           <img src={images[currentIndex]} alt="Venue" className="carouselImage" />
           <div className="carouselControls">
             {images.map((_, index) => (
@@ -55,12 +58,12 @@ const Venue = () => {
               ></button>
             ))}
           </div>
-        </div>
-        <div className="venueLower">
+        </div> */}
+
           <div className="venuwLowerDetail">
             <div className="venueLowerDHeading">
               <p>DREAMCITY LUDHIANA</p>
-              <div className="navbarCc">
+              {/* <div className="navbarCc">
                 <div className="contactUu">
                   <p>Contact Us</p>
                 </div>
@@ -68,7 +71,7 @@ const Venue = () => {
                   <p>+91 95177 77992</p>
                   <img src="https://res.cloudinary.com/dznnm9b1j/image/upload/v1740036744/up-right-arrow_ovtgwy.png" alt="" />
                 </div>
-              </div>
+              </div> */}
             </div>
             <div className="venueLowerDDetails">
               <div className="venueLeft">

@@ -6,7 +6,7 @@ import AOS from "aos";
 const GetinTouch=()=>{
     useEffect(() => {
             AOS.init({
-              duration: 1000,
+              duration: 1000
             });
           }, []);
     return(
