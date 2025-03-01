@@ -47,7 +47,7 @@ const Venue = () => {
         
         <div className="venueLower">
 
-        {/* <div className="venueUpper">
+        <div className="venueUpper">
           <img src={images[currentIndex]} alt="Venue" className="carouselImage" />
           <div className="carouselControls">
             {images.map((_, index) => (
@@ -58,12 +58,12 @@ const Venue = () => {
               ></button>
             ))}
           </div>
-        </div> */}
+        </div>
 
           <div className="venuwLowerDetail">
             <div className="venueLowerDHeading">
               <p>DREAMCITY LUDHIANA</p>
-              {/* <div className="navbarCc">
+              <div className="navbarCc">
                 <div className="contactUu">
                   <p>Contact Us</p>
                 </div>
@@ -71,7 +71,7 @@ const Venue = () => {
                   <p>+91 95177 77992</p>
                   <img src="https://res.cloudinary.com/dznnm9b1j/image/upload/v1740036744/up-right-arrow_ovtgwy.png" alt="" />
                 </div>
-              </div> */}
+              </div>
             </div>
             <div className="venueLowerDDetails">
               <div className="venueLeft">
